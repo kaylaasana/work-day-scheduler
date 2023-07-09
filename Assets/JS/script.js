@@ -25,12 +25,14 @@ $(function () {
   for (var i = 9; i < 18; i++) {
     var hourEl = $("#hour-" + i);
 
-    if (currentHour < i) {
-      hourEl.addClass("present");
+    if (currentHour > i) {
+      hourEl.removeClass('present future').addClass('past');
     } else if (currentHour === i) {
-      hourEl.addClass("past");
+      hourEl.removeClass('past future').addClass("present");
     } else {
-      hourEl.addClass("future");
+      hourEl.removeClass('past present').addClass("future");
     }
   }
+
+  //create function that checks time every 1 minute and updates the time on the page. look up setInterval
 });
