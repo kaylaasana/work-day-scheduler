@@ -22,8 +22,6 @@ $(function () {
     var hourSaved = $(this).closest(".time-block").attr("id");
     var savedEvent = $(this).siblings(".description").val();
     localStorage.setItem(hourSaved, savedEvent);
-
-    
   });
 
   

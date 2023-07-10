@@ -2,11 +2,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
-
+/* added google font style to h1 */
 .custom-h1 {
   font-family: 'Montserrat', sans-serif;
 }
-
+/* changed font color */
 textarea {
   background: transparent;
   border: none;
@@ -33,17 +33,17 @@ textarea {
   color: #000000;
   border-top: 1px dashed #000000;
 }
-
+/* changed background and font color */
 .past {
   background-color: #d3d3d3;
   color: black;
 }
-
+/* changed background and font color */
 .present {
   background-color: #e1ff75;
   color: black;
 }
-
+/* changed background and font color */
 .future {
   background-color: #61dfff;
   color: black;
@@ -60,8 +60,4 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
-}
-
-.lead {
-  color: #000000;
 }
