@@ -1,4 +1,5 @@
 $(function () {
+
   //function to set up updating time display
   function refreshTime(){
     //define time and display on page
@@ -7,8 +8,9 @@ $(function () {
     //define current date and display it on the page
     var currentDate = dayjs().format("dddd, MMMM, D YYYY");
     $("#currentDate").text(currentDate);
-  }
+  };
   refreshTime();
+
   //set interval to update every one second to give a relatively accurate time and date on page
   setInterval(refreshTime, 1000);
   //check local storage for saved data
@@ -23,7 +25,6 @@ $(function () {
     var savedEvent = $(this).siblings(".description").val();
     localStorage.setItem(hourSaved, savedEvent);
   });
-
   
   //applies styling from CSS using classes based on the current hour
   for (var i = 9; i < 18; i++) {
@@ -38,7 +39,6 @@ $(function () {
     } else {
       hourEl.removeClass('past present').addClass("future");
     }
-  }
-
-  // maybe create function that checks time every 1 minute and updates the time on the page. look up setInterval
+  };
+  
 });
